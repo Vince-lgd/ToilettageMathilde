@@ -1,10 +1,10 @@
 <template>
   <main>
-    <HomePAge />
+    <HomePage />
   </main>
 </template>
 
 <script setup>
-import HomePAge from './components/HomePAge.vue'
+import HomePage from './components/HomePage.vue'
 </script>
 
