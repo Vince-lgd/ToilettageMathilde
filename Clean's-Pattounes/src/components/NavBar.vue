@@ -11,14 +11,15 @@
             />
           </div>
           <div class="title-container">
-            <v-app-bar-title class="title ml-8">Accueil</v-app-bar-title>
-
-            <!-- Lien cliquable avec router-link -->
+            <router-link to="/">
+              <span class="title link-text ml-8">Accueil</span>
+            </router-link>
             <router-link to="/presentation">
               <span class="title link-text">Présentation</span>
             </router-link>
-
-            <v-app-bar-title class="title">Prestations</v-app-bar-title>
+            <router-link to="/services">
+              <span class="title link-text">Prestations</span>
+            </router-link>
           </div>
         </template>
 
@@ -66,6 +67,17 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2000; /* S'assurer que la navbar est au-dessus */
+  z-index: 2000; 
+}
+
+.router-link-exact-active,
+.router-link-active {
+  color: inherit !important; 
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 </style>

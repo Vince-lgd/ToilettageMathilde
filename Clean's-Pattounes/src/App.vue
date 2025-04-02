@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="app-container">
-    <NavBar /> <!-- Votre barre de navigation -->
-    <router-view /> <!-- Affichage des pages selon la route -->
+    <NavBar /> 
+    <router-view />
   </div>
 </template>
 

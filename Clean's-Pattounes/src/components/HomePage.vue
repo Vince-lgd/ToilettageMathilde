@@ -71,12 +71,11 @@ import cockerImage from '@/assets/image/cocker-spaniel-anglais.jpg'
 
 .home {
   min-height: 80vh;
-  padding-top: 120px; /* Espace suffisant sous la NavBar */
+  padding-top: 120px; 
 }
 
-/* Assurez-vous que l'image est en dessous de la NavBar */
 .image-under-navbar {
   position: relative;
-  z-index: 1; /* Moins élevé que la navbar */
+  z-index: 1; 
 }
 </style>

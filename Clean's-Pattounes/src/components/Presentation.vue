@@ -1,54 +1,55 @@
 <template>
-    <v-container fluid class="full-page pa-0">
-      <NavBar />
-      <v-container class="home">
-
-      </v-container>
-    </v-container>
-    
-    <v-container>
-      <v-row>
-        <v-col class="space">
-          <h1 class="text-h3 font-weight-bold mt-12">Présentation</h1>
-          <p class="mt-4 w-50">Bienvenue chez Clean Pattouns, le soin et le bien-être de vos animaux avant tout !
-            Nous sommes une équipe passionnée et dévouée à offrir le meilleur pour vos compagnons à quatre pattes. Nous savons à quel point vos animaux sont précieux et nous nous engageons à leur fournir des soins de toilettage adaptés à leurs besoins spécifiques dans un cadre calme et sécurisé.</p>
-            <v-btn
-              class="text-none text-subtitle-1 mt-8"
-              color="#99B4A0"
-              rounded="xl">
-              En savoir plus
-              <v-icon class="ml-2" right>mdi-arrow-right</v-icon>
-            </v-btn>
+    <v-container fluid class="top-page pa-4">
+      <v-row align="center" justify="space-between">
+        <v-col cols="12" class="space">
+          <p class="text-h5 w-50">Je suis Mathilde. Passionnée par le bien-être animal, j'ai décidé de créer Clean's Pattounes pour offrir un service de qualité à tous les propriétaires d'animaux qui souhaitent prendre soin de leurs compagnons tout en leur offrant une expérience agréable.</p>
+        </v-col>
+        <v-col cols="12" class="d-flex justify-end">
+          <v-img
+            :src="mathilde"
+            alt="Mathilde"
+            max-width="200"
+            class="rounded-lg image-under-navbar"
+            contain
+          />
         </v-col>
       </v-row>
-      <v-row>
-        <v-col class="space">
-          <h1 class="text-h3 font-weight-bold mt-12">Prestation</h1>
-          <p class="mt-4 w-50">Bienvenue chez Clean Pattouns, le soin et le bien-être de vos animaux avant tout !
-            Nous sommes une équipe passionnée et dévouée à offrir le meilleur pour vos compagnons à quatre pattes. Nous savons à quel point vos animaux sont précieux et nous nous engageons à leur fournir des soins de toilettage adaptés à leurs besoins spécifiques dans un cadre calme et sécurisé.</p>
-            <v-btn
-              class="text-none text-subtitle-1 mt-8"
-              color="#99B4A0"
-              rounded="xl">
-              En savoir plus
-              <v-icon class="ml-2" right>mdi-arrow-right</v-icon>
-            </v-btn>
+    </v-container>
+    <v-container fluid class="bottom-page pa-0">
+      <v-row align="center" justify="space-between">
+        <v-col cols="12">
+          <v-img
+            :src="mathilde"
+            alt="Mathilde"
+            max-width="200"
+            class="rounded-lg image-under-navbar"
+            contain
+          />
+        </v-col>
+        <v-col cols="12" class="space d-flex justify-end">
+          <p class="text-h5 w-25">Situé dans les landes, on se situe à telle addresses, nous avons un epartie toilettage et une partie accessoires, jeux, soins </p>
         </v-col>
       </v-row>
     </v-container>
   </template>
-  
+
   <script setup>
-  import NavBar from './NavBar.vue'
+  import mathilde from '@/assets/image/mathilde.png'
+
+  
   </script>
   
   <style scoped>
-  .full-page {
-    background-color: #99B4A0;
-    min-height: 100vh;
+  .top-page {
+  background-color: #ffffff;
+  min-height: 100vh;
   }
+  .bottom-page {
+  background-color: #99B4A0;
+  }
+
   .space {
-    margin-top: 4rem;
+    margin-top: 10rem;
   }
   
   .home {
