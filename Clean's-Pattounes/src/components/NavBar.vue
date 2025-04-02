@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-layout>
-      <v-app-bar color="#99B4A0" :height="100">
+      <v-app-bar color="#99B4A0" :height="100" sticky>
         <template v-slot:prepend>
           <div class="logo-container">
             <v-img
@@ -11,11 +11,17 @@
             />
           </div>
           <div class="title-container">
-          <v-app-bar-title class="title ml-8">Accueil</v-app-bar-title>
-          <v-app-bar-title class="title">Présentation</v-app-bar-title>
-          <v-app-bar-title class="title">Prestations</v-app-bar-title>
-        </div>
+            <v-app-bar-title class="title ml-8">Accueil</v-app-bar-title>
+
+            <!-- Lien cliquable avec router-link -->
+            <router-link to="/presentation">
+              <span class="title link-text">Présentation</span>
+            </router-link>
+
+            <v-app-bar-title class="title">Prestations</v-app-bar-title>
+          </div>
         </template>
+
         <template v-slot:append>
           <v-btn rounded="xl" style="font-weight: bold;" class="btn-rdv">Prendre rdv</v-btn>
         </template>
@@ -50,18 +56,16 @@ export default {
   font-size: 1.25rem;
 }
 
-/* Style du bouton */
-/* .btn-rdv {
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding: 12px 24px;
-  border-radius: 30px;
-  color: #333;
-  text-transform: uppercase;
-  transition: 0.3s ease-in-out;
+.link-text {
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.btn-rdv:hover {
-  background-color: #ddd;
-} */
+.v-app-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000; /* S'assurer que la navbar est au-dessus */
+}
 </style>
