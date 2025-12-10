@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomePage from './components/HomePage.vue';
 import Presentation from './components/Presentation.vue';
 import Service from './components/Service.vue';
+import Appointment from './components/Appointment.vue';
 
 const routes = [
   {
@@ -18,8 +19,12 @@ const routes = [
     path: '/services',
     name: 'services',
     component: Service
-  }
-  // Ajoutez d'autres routes selon vos besoins
+  },
+  {
+    path: '/appointments',
+    name: 'appointments',
+    component: Appointment
+  },
 ];
 
 const router = createRouter({
