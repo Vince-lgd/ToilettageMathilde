@@ -1,20 +1,14 @@
-import { fileURLToPath, URL } from 'node:url'
-import { defineConfig } from 'vite'
+// vite.config.js
+import { defineConfig, fileURLToPath, URL } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
-  plugins: [
-    vue(),
-    vueDevTools(),
-  ],
+  plugins: [vue()],
   resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    },
+    alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
   },
   build: {
-    outDir: 'dist', // dossier de sortie pour Vercel
+    outDir: 'dist',
   },
-  base: './', // essentiel pour que les assets soient trouvés sur Vercel
+  base: './',
 })
