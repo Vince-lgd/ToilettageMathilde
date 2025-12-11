@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-left">
           <h1 class="text-h1 font-weight-bold">Bienvenue chez Clean's Pattounes</h1>
-          <p class="text-h4 mt-10">Un salon spécialisé sur toutes races de chiens et de chats</p>
+          <p class="text-h4 mt-10">Un salon chaleureux et convivial</p>
         </div>
 
         <div class="col-right">
